@@ -1398,7 +1398,7 @@ body, .nav, .card, .skill-card, .nav-links a {
     letter-spacing: -.009em;
 }
 
-/* Project image gallery */
+/* Project media containers */
 .project-image-gallery {
     width: 100%;
     display: flex;
@@ -1408,38 +1408,46 @@ body, .nav, .card, .skill-card, .nav-links a {
     padding: 2rem;
 }
 
-.project-image-gallery img {
-    width: 100%; 
+.project-image-gallery img,
+.project-video {
+    width: 100%;
     max-width: 100%;
     height: auto;
-    object-fit: scale-down;  
     border-radius: 0.8rem;
-    transition: transform 0.3s ease;
     background: var(--card-bg);
-    padding: 1rem;  
     box-shadow: 0 5px 15px var(--shadow-color);
+    padding: 1rem;
+    transition: transform 0.3s ease;
 }
 
-/* Mobile adjustments */
 @media (max-width: 768px) {
     .project-card {
-        padding: 1rem;  
+        padding: 1rem;
     }
 
     .project-image-gallery {
         padding: 0.5rem;
-        gap: 1.5rem;
+        gap: 2rem;
     }
     
-    .project-image-gallery img {
-        width: 100%;
+    .project-image-gallery img,
+    .project-video {
         padding: 0.5rem;
-        min-height: 150px;  /* Reduced min-height */
-        max-height: 300px;  /* Added max-height */
-        object-fit: contain;  /* Changed back to contain for mobile */
+        min-height: 200px;
+        max-height: 400px;
+        object-fit: contain;
+        margin: 1rem 0;
     }
 
     .project-content {
-        padding: 1.5rem 0.5rem;  /* Added horizontal padding */
+        padding: 2rem 1rem;
+    }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+    .project-image-gallery img,
+    .project-video {
+        min-height: 300px;
+        max-height: 500px;
     }
 }
