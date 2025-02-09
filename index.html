@@ -1,0 +1,463 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Harshad Chunder - Computer Engineering Student Portfolio">
+    <title>Harshad Chunder</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+    <div id="particles-js"></div>
+    <nav class="nav">
+        <div class="nav-brand">
+            <h2>Harshad Chunder</h2>
+        </div>
+        <div class="nav-links">
+            <a href="#education">Education</a>
+            <a href="#experience">Experience</a>
+            <a href="#leadership">Leadership</a>
+            <a href="#projects">Projects</a>
+            <a href="#skills">Skills</a>
+            <a href="#contact">Contact</a>
+            <button id="theme-toggle" aria-label="Toggle dark mode">
+                <svg class="sun-icon" viewBox="0 0 24 24" width="24" height="24">
+                    <path d="M12 17c-2.76 0-5-2.24-5-5s2.24-5 5-5 5 2.24 5 5-2.24 5-5 5zm0-8c-1.65 0-3 1.35-3 3s1.35 3 3 3 3-1.35 3-3-1.35-3-3-3zm0-2V3c0-.55.45-1 1-1s1 .45 1 1v4c0 .55-.45 1-1 1s-1-.45-1-1zm0 14v-4c0-.55.45-1 1-1s1 .45 1 1v4c0 .55-.45 1-1 1s-1-.45-1-1zm9-9h-4c-.55 0-1-.45-1-1s.45-1 1-1h4c.55 0 1 .45 1 1s-.45 1-1 1zM3 12h4c.55 0 1 .45 1 1s-.45 1-1 1H3c-.55 0-1-.45-1-1s.45-1 1-1z"/>
+                </svg>
+                <svg class="moon-icon" viewBox="0 0 24 24" width="24" height="24">
+                    <path d="M12 3c.55 0 1 .45 1 1v1c0 .55-.45 1-1 1s-1-.45-1-1V4c0-.55.45-1 1-1zm0 15c-.55 0-1 .45-1 1v1c0 .55.45 1 1 1s1-.45 1-1v-1c0-.55-.45-1-1-1zM4 12c0-.55-.45-1-1-1H2c-.55 0-1 .45-1 1s.45 1 1 1h1c.55 0 1-.45 1-1zm19-1h-1c-.55 0-1 .45-1 1s.45 1 1 1h1c.55 0 1-.45 1-1s-.45-1-1-1zM5.64 7.05l-.70-.70c-.39-.39-1.02-.39-1.41 0-.39.39-.39 1.02 0 1.41l.70.70c.39.39 1.02.39 1.41 0 .39-.39.39-1.02 0-1.41zm12.02 12.02l-.70-.70c-.39-.39-1.02-.39-1.41 0-.39.39-.39 1.02 0 1.41l.70.70c.39.39 1.02.39 1.41 0 .39-.39.39-1.02 0-1.41zm-12.02-12.02c.39-.39.39-1.02 0-1.41l-.70-.70c-.39-.39-1.02-.39-1.41 0-.39.39-.39 1.02 0 1.41l.70.70c.39.39 1.02.39 1.41 0zm12.02 12.02c.39-.39.39-1.02 0-1.41l-.70-.70c-.39-.39-1.02-.39-1.41 0-.39.39-.39 1.02 0 1.41l.70.70c.39.39 1.02.39 1.41 0z"/>
+                </svg>
+            </button>
+        </div>
+        <div class="nav-controls">
+            <button id="theme-toggle-mobile" aria-label="Toggle dark mode">
+                <svg class="sun-icon" viewBox="0 0 24 24" width="24" height="24">
+                    <path d="M12 17c-2.76 0-5-2.24-5-5s2.24-5 5-5 5 2.24 5 5-2.24 5-5 5zm0-8c-1.65 0-3 1.35-3 3s1.35 3 3 3 3-1.35 3-3-1.35-3-3-3zm0-2V3c0-.55.45-1 1-1s1 .45 1 1v4c0 .55-.45 1-1 1s-1-.45-1-1zm0 14v-4c0-.55.45-1 1-1s1 .45 1 1v4c0 .55-.45 1-1 1s-1-.45-1-1zm9-9h-4c-.55 0-1-.45-1-1s.45-1 1-1h4c.55 0 1 .45 1 1s-.45 1-1 1zM3 12h4c.55 0 1 .45 1 1s-.45 1-1 1H3c-.55 0-1-.45-1-1s.45-1 1-1z"/>
+                </svg>
+                <svg class="moon-icon" viewBox="0 0 24 24" width="24" height="24">
+                    <path d="M12 3c.55 0 1 .45 1 1v1c0 .55-.45 1-1 1s-1-.45-1-1V4c0-.55.45-1 1-1zm0 15c-.55 0-1 .45-1 1v1c0 .55.45 1 1 1s1-.45 1-1v-1c0-.55-.45-1-1-1zM4 12c0-.55-.45-1-1-1H2c-.55 0-1 .45-1 1s.45 1 1 1h1c.55 0 1-.45 1-1zm19-1h-1c-.55 0-1 .45-1 1s.45 1 1 1h1c.55 0 1-.45 1-1s-.45-1-1-1zM5.64 7.05l-.70-.70c-.39-.39-1.02-.39-1.41 0-.39.39-.39 1.02 0 1.41l.70.70c.39.39 1.02.39 1.41 0 .39-.39.39-1.02 0-1.41zm12.02 12.02l-.70-.70c-.39-.39-1.02-.39-1.41 0-.39.39-.39 1.02 0 1.41l.70.70c.39.39 1.02.39 1.41 0 .39-.39.39-1.02 0-1.41zm-12.02-12.02c.39-.39.39-1.02 0-1.41l-.70-.70c-.39-.39-1.02-.39-1.41 0-.39.39-.39 1.02 0 1.41l.70.70c.39.39 1.02.39 1.41 0zm12.02 12.02c.39-.39.39-1.02 0-1.41l-.70-.70c-.39-.39-1.02-.39-1.41 0-.39.39-.39 1.02 0 1.41l.70.70c.39.39 1.02.39 1.41 0z"/>
+                </svg>
+            </button>
+            <button class="menu-toggle" aria-label="Toggle menu">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+        </div>
+    </nav>
+
+<section class="user">
+    <div class="user-content">
+        <h1>Resume & Portfolio</h1>
+        <p>Computer Engineering Student at the University of Pretoria</p>
+    </div>
+</section>
+
+<section id="education">
+    <div class="content">
+        <h2 class="section-title">Education</h2>
+        <div class="timeline">
+            <div class="timeline-item">
+                <div class="card">
+                    <h3>BEng Computer Engineering</h3>
+                    <p>University of Pretoria | 2022 - 2025</p>
+                    <ul>
+                        <li>Vice Chancellor's Discretionary Merit Award</li>
+                        <li>Dean's Merit List 2022</li>
+                        <li>Expected completion date: December 2025</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="timeline-item">
+                <div class="card">
+                    <h3>High School</h3>
+                    <p>Star College | 2017 - 2021</p>
+                    <ul>
+                        <li>Matriculated with 9 distinctions and a 93.8% aggregate</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="experience">
+    <div class="content">
+        <h2 class="section-title">Professional Experience</h2>
+        <div class="timeline">
+            <div class="timeline-item">
+                <div class="card">
+                    <div class="card-content">
+                        <div class="card-text">
+                            <h3>Student Software Engineer</h3>
+                            <p>Gendac | Jan 2024 - Jan 2024</p>
+                            <ul>
+                                <li>Developed a Blazor Hybrid MAUI web application using .NET 9, delivering a cross-platform user experience using Azure Maps</li>
+                                <li>Built a RESTful API to enable efficient data exchange and application functionality</li>
+                                <li>Managed an Azure SQL database and implemented code-first migrations using Entity Framework Core</li>
+                                <li>Deployed the application to Azure DevOps, gaining hands-on experience with project DevOps practices and exposure to build pipelines</li>
+                                <li><a href="https://www.linkedin.com/posts/gendacgroup_gendac-careerforlife-activity-7287002828819062784-vPHd?utm_source=share&utm_medium=member_desktop" target="_blank">Gendac's LinkedIn Post</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="timeline-item">
+                <div class="card">
+                    <div class="card-content">
+                        <div class="card-text">
+                            <h3>Student Vacation Work</h3>
+                            <p>BBD | Nov 2023 - Dec 2023</p>
+                            <ul>
+                                <li>Designed and implemented a Dockerized PostgreSQL database to establish a scalable and efficient development environment, utilising Flyway migrations to manage database schema changes</li>
+                                <li>Developed an API using Azure Functions for local developmen</li>
+                                <li>Gained foundational knowledge of Git for version control and collaborative development</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="card-image">
+                        <img src="img/BBD.jpg" alt="BBD experience">
+                    </div>
+                </div>
+            </div>
+
+            <div class="timeline-item">
+                <div class="card">
+                    <div class="card-content">
+                        <div class="card-text">
+                            <h3>Kearney Super Case Competition</h3>
+                            <p>Kearney | Oct 2023</p>
+                            <ul>
+                                <li>Identified causes of profit decline for a consumer goods company</li>
+                                <li>Developed an implementation plan to restore profitability</li>
+                                <li>Part of the winning team recognized for actionable solutions</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="card-image">
+                        <img src="img/kearney.jpg" alt="Kearney experience">
+                    </div>
+                </div>
+            </div>
+
+            <div class="timeline-item">
+                <div class="card">
+                    <div class="card-content">
+                        <div class="card-text">
+                            <h3>Bain Accelerate Programme</h3>
+                            <p>Bain & Company | Nov 2022 - Dec 2022</p>
+                            <ul>
+                                <li>Gained proficiency in the Microsoft Office suite and insight on private equity fundamentals</li>
+                                <li>Collaborated on a mock due diligence case for acquiring a cryptocurrency platform</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="card-image">
+                        <img src="img/Bain.jpeg" alt="Bain experience">
+                    </div>
+                </div>
+            </div>
+
+            <div class="timeline-item">
+                <div class="card">
+                    <div class="card-content">
+                        <div class="card-text">
+                            <h3>Grow@BCG</h3>
+                            <p>Boston Consulting Group | Jul 2022 - Sep 2022</p>
+                            <ul>
+                                <li>Developed and presenteda winning implementation strategy for sustainable agricultural practices</li>
+                                <li>Proposed soil preservation and water conservation techniques to combat climate change and enhace resliance of crops</li>
+                                <li>Recognized for delivering practical and scalable solutions</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="card-image">
+                        <img src="img/BCG.jpeg" alt="BCG experience">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="leadership">
+    <div class="content">
+        <h2 class="section-title">Leadership Experience</h2>
+        <div class="timeline">
+            <div class="timeline-item">
+                <div class="card">
+                    <h3>Project Manager – Software Engineering Course</h3>
+                    <p>University of Pretoria | Aug 2023 - Sep 2023</p>
+                    <ul>
+                        <li>Led a team of 10 to develop an online bookstore</li>
+                        <li>Conducted requirement elicitation, facilitated group meetings, tracked deadlines, and created a project schedule</li>
+                        <li>Achieved an average group score of 81%</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="timeline-item">
+                <div class="card">
+                    <h3>IntelliEducation</h3>
+                    <p>Founder | Jan 2023 - Jul 2023</p>
+                    <ul>
+                        <li>Founded an online tuition business, developed a customized curriculum for matric students, and provided tailored mathematics tutoring, resulting in improved academic performance.</li>
+                        <li>Managed student relationships by adapting teaching methods to individual needs, ensuring consistent progress through regular feedback.</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="timeline-item">
+                <div class="card">
+                    <h3>International Swiss Talent Forum 2023</h3>
+                    <p>Schweizer Jugend Forscht | Feb 2023</p>
+                    <ul>
+                        <li>Represented South Africa at a think tank in Switzerland</li>
+                        <li>Collaborated on solutions for transitioning to circular economies through the patent system</li>
+                        <li>Participated in MasterClasses on ideation, critical thinking, and presentation, enhancing analytic and communication skills</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="timeline-item">
+                <div class="card">
+                    <h3>Various International STEM expos</h3>
+                    <p>Kenya, Romania, South Korea, South Africa | October 2018 – December 2019</p>
+                    <ul>
+                        <li>Received multiple international accolades for developing a home smart security system, including the Inha Hwang Award in South Korea, Gold in Infomatrix Romania, Bronze in Eskom ISF South Africa, and Bronze in Golden Climate Kenya, showcasing technical expertise and problem-solving in STEM.</li>
+                        <li>The home smart security system consisted of a laser detection, combustible gas detection using an MQ-2 gas sensor, facial recognition using OpenCV, notifications using Tweepy API and live-streaming service.</li>
+                        <li><a href="https://www.citizen.co.za/highway-mail/news-headlines/2018/12/13/young-inventors-bring-home-gold/" target="_blank">Highway Mail - South Korea</a></li>
+                        <li><a href="https://web.facebook.com/starcollegedurban/posts/well-done-harshad/705711959941950/?_rdc=1&_rdr#" target="_blank">Eskom ISF Facebook Post</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="projects">
+    <div class="content">
+        <h2 class="section-title">Projects</h2>
+        <div class="projects-grid">
+            <div class="project-card">
+                <div class="project-image-gallery">
+                    <img src="img/Convolution_Filters.png" alt="Analysis Results">
+                    <img src="img/CNN-Architecture.png" alt="CNN Architecture">
+                </div>
+                <div class="project-content">
+                    <h3>Twitter Sentiment Analysis with CNN</h3>
+                    <div class="project-tags">
+                        <span class="project-tag">Python</span>
+                        <span class="project-tag">PyTorch</span>
+                        <span class="project-tag">Deep Learning</span>
+                        <span class="project-tag">NLP</span>
+                        <span class="project-tag">CNN</span>
+                    </div>
+                    <div class="project-description">
+                        <p>A deep learning project that performs sentiment analysis on Twitter data using a Convolutional Neural Network (CNN). The system analyzes tweets to determine their emotional tone, classifying sentiments on a spectrum from very negative to very positive.</p>
+                        <p>Key Features:</p>
+                        <ul>
+                            <li>Custom CNN architecture with multiple convolutional layers</li>
+                            <li>Utilizes Google's pre-trained Word2Vec model for word embeddings</li>
+                            <li>Implements efficient data processing pipeline</li>
+                            <li>Achieves 77.87% validation accuracy</li>
+                            <li>Features GPU acceleration and memory optimization</li>
+                        </ul>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://github.com/HarshadChunder/Sentiment-Analysis" target="_blank" class="github-link">
+                            <i class="fa-brands fa-github"></i>
+                            View Source
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project-card">
+                <div class="project-image-gallery">
+                    <img src="img/Smart_Security_System.png" alt="Smart Security System Overview">
+                </div>
+                <div class="project-content">
+                    <h3>Simply Secure</h3>
+                    <div class="project-tags">
+                        <span class="project-tag">Python</span>
+                        <span class="project-tag">Raspberry Pi</span>
+                        <span class="project-tag">OpenCV</span>
+                        <span class="project-tag">IoT</span>
+                        <span class="project-tag">Computer Vision</span>
+                    </div>
+                    <div class="project-description">
+                        <p>A home smart security system built with Raspberry Pi Model 3B that integrates multiple security features including facial recognition, gas detection, laser tripwire, and motion detection with video streaming capabilities.</p>
+                        <p>Key Features:</p>
+                        <ul>
+                            <li>Real-time face detection using OpenCV with automatic image capture</li>
+                            <li>Gas level monitoring using MQ-2 sensor with configurable thresholds</li>
+                            <li>Laser tripwire system with beam-break detection</li>
+                            <li>Motion-activated video surveillance with live streaming</li>
+                            <li>Automated Twitter notifications for security events</li>
+                            <li>Integrated alarm system with multiple trigger conditions</li>
+                        </ul>
+                        <p>Technologies Used:</p>
+                        <ul>
+                            <li>Python for system control and integration</li>
+                            <li>OpenCV for facial recognition and video processing</li>
+                            <li>Tweepy API for remote notifications</li>
+                            <li>SPI interface for ADC communication</li>
+                        </ul>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://github.com/HarshadChunder/Smart-Security-System" target="_blank" class="github-link">
+                            <i class="fa-brands fa-github"></i>
+                            View Source
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="skills">
+    <div class="content">
+        <h2 class="section-title">Skills & Certifications</h2>
+        <div class="skills-content">
+            <!-- Technical Skills -->
+            <div class="skills-column">
+                <h3>Technical Skills</h3>
+                <ul class="skills-list">
+                    <li><i class="fa-solid fa-code"></i>.NET Framework</li>
+                    <li><i class="fa-solid fa-code-branch"></i>Natural Language Processing</li>
+                    <li><i class="fa-solid fa-brain"></i>Machine Learning</li>
+                    <li><i class="fa-solid fa-cloud"></i>Azure DevOps</li>
+                    <li><i class="fa-solid fa-database"></i>PostgreSQL</li>
+                    <li><i class="fa-brands fa-docker"></i>Docker</li>
+                    <li><i class="fa-solid fa-microphone"></i>Public Speaking</li>
+                    <li><i class="fa-solid fa-chart-line"></i>Analytical Skills</li>
+                    <li><i class="fa-solid fa-users"></i>Teamwork</li>
+                </ul>
+            </div>
+
+            <!-- Certifications -->
+            <div class="skills-column">
+                <h3>Certifications</h3>
+                <ul class="skills-list">
+                    <li>
+                        <i class="fa-solid fa-id-card"></i>
+                        <div class="cert-details">
+                            <span class="cert-name">Member of Golden Key International Honour Society</span>
+                            <span class="cert-issuer">Golden Key International Honour Society</span>
+                        </div>
+                    </li>
+                    <li>
+                        <i class="fa-solid fa-network-wired"></i>
+                        <div class="cert-details">
+                            <span class="cert-name">CCNA: Introduction to Networks (ITN)</span>
+                            <span class="cert-issuer">Cisco Networking Academy</span>
+                        </div>
+                    </li>
+                    <li>
+                        <i class="fa-solid fa-network-wired"></i>
+                        <div class="cert-details">
+                            <span class="cert-name">
+                                CCNAv7: Enterprise Networking, Security</span>
+                            <span class="cert-issuer">Cisco Networking Academy</span>
+                        </div>
+                    </li>
+                    <li>
+                        <i class="fa-solid fa-square-root-variable"></i>
+                        <div class="cert-details">
+                            <span class="cert-name">MATLAB Certified</span>
+                            <span class="cert-issuer">MathWorks</span>
+                        </div>
+                    </li>
+                    <li>
+                        <i class="fa-solid fa-id-card"></i>
+                        <div class="cert-details">
+                            <span class="cert-name">Member of IITPSA</span>
+                            <span class="cert-issuer">IITPSA - Institute of IT Professionals South Africa</span>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Awards -->
+            <div class="skills-column">
+                <h3>Awards</h3>
+                <ul class="skills-list">
+                    <li>
+                        <i class="fa-solid fa-award"></i>
+                        <div class="award-details">
+                            <span class="award-name">Vice Chancellor's Merit Award</span>
+                            <span class="award-detail">University of Pretoria</span>
+                        </div>
+                    </li>
+                    <li>
+                        <i class="fa-solid fa-award"></i>
+                        <div class="award-details">
+                            <span class="award-name">EBIT Dean's List 2022</span>
+                            <span class="award-detail">Faculty of Engineering, Built Environment and Information Technology</span>
+                        </div>
+                    </li>
+                    <li>
+                        <i class="fa-solid fa-medal"></i>
+                        <div class="award-details">
+                            <span class="award-name">Gold Medalist</span>
+                            <span class="award-detail">Infomatrix Romania</span>
+                        </div>
+                    </li>
+                    <li>
+                        <i class="fa-solid fa-medal"></i>
+                        <div class="award-details">
+                            <span class="award-name">Bronze Medalist</span>
+                            <span class="award-detail">Golden Climate Kenya</span>
+                        </div>
+                    </li>
+                    <li>
+                        <i class="fa-solid fa-medal"></i>
+                        <div class="award-details">
+                            <span class="award-name">Bronze Medalist</span>
+                            <span class="award-detail">Eskom ISF South Africa</span>
+                        </div>
+                    </li>
+                    <li>
+                        <i class="fa-solid fa-trophy"></i>
+                        <div class="award-details">
+                            <span class="award-name">Inha Hwang Award</span>
+                            <span class="award-detail">ESA MILSET South Korea</span>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="contact">
+    <div class="content">
+        <h2 class="section-title">Get In Touch</h2>
+        <div class="contact-container">
+            <div class="contact-card">
+                <div class="contact-item">
+                    <i class="fa-solid fa-envelope"></i>
+                    <div class="contact-details">
+                        <h3>Email</h3>
+                        <a href="https://mail.google.com/mail/?view=cm&fs=1&to=harshad.chunder24@gmail.com" target="_blank">
+                            harshad.chunder24@gmail.com
+                        </a>
+                    </div>
+                </div>
+                <div class="contact-item">
+                    <i class="fa-brands fa-linkedin"></i>
+                    <div class="contact-details">
+                        <h3>LinkedIn</h3>
+                        <a href="https://www.linkedin.com/in/harshadchunder" target="_blank">
+                            linkedin.com/in/harshadchunder
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<script src="script.js"></script>
+<script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+</body>
+</html>
