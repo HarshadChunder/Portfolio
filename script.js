@@ -51,8 +51,8 @@ const particleConfigs = {
                 direction: "none",
                 random: false,
                 straight: false,
-                out_mode: "out",
-                bounce: false
+                out_mode: "bounce",
+                bounce: true
             }
         },
         interactivity: {
