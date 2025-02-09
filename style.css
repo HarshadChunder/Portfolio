@@ -1,8 +1,6 @@
-﻿/* 
-   Base & Variables
- */
+﻿/* Root variables */
 :root {
-    /* Colors */
+    /* Theme colors */
     --bg-color: #ffffff;
     --text-color: #1d1d1f;
     --card-bg: #ffffff;
@@ -16,6 +14,7 @@
     --user-overlay: rgba(0, 0, 0, 0.4);
 }
 
+/* Dark theme overrides */
 [data-theme="dark"] {
     --bg-color: #1a1a1a;
     --text-color: #ffffff;
@@ -29,7 +28,7 @@
     --primary-hover: #0077ED;
 }
 
-/* Common Styles */
+/* Reset defaults */
 * {
     margin: 0;
     padding: 0;
@@ -37,6 +36,7 @@
     font-family: -apple-system, BlinkMacSystemFont, "SF Pro Display", "SF Pro Icons", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
 }
 
+/* Base styles */
 body {
     background: var(--bg-color);
     color: var(--text-color);
@@ -44,32 +44,7 @@ body {
     scroll-behavior: smooth;
 }
 
-/* Common Typography */
-.text-primary {
-    font-size: 17px;
-    line-height: 1.47059;
-    font-weight: 400;
-    letter-spacing: -.022em;
-}
-
-.heading-large {
-    font-size: 28px;
-    line-height: 1.14286;
-    font-weight: 600;
-    letter-spacing: -.009em;
-}
-
-/* Common Components */
-.card-base {
-    background: var(--card-bg);
-    border-radius: 1rem;
-    box-shadow: 0 10px 30px var(--shadow-color);
-    transition: all 0.3s ease;
-}
-
-/*
-   Layout & Sections
-*/
+/* Section layouts */
 section {
     padding: 8rem 5%;
     min-height: 100vh;
@@ -101,9 +76,7 @@ section.visible {
     width: 100%;
 }
 
-/*
-   Navigation Bar
-*/
+/* Navigation */
 .nav {
     position: fixed;
     top: 0;
@@ -184,6 +157,7 @@ section.visible {
     font-weight: 400;
 }
 
+/* Particles background */
 #particles-js {
     position: absolute;
     width: 100%;
@@ -192,9 +166,7 @@ section.visible {
     z-index: 1;
 }
 
-/*
-   User Section
-*/
+/* Hero section */
 .user {
     position: relative;
     height: 100vh;
@@ -204,8 +176,8 @@ section.visible {
     color: white;
     text-align: center;
     padding: 0 5%;
-    z-index: 2;  /* Place content above particles */
-    background: none;  /* Remove previous background */
+    z-index: 2;
+    background: none;
 }
 
 .user-content {
@@ -231,9 +203,7 @@ section.visible {
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
 
-/* 
-   Timeline & Cards
-*/
+/* Timeline */
 .timeline {
     position: relative;
     max-width: 1000px;
@@ -279,7 +249,6 @@ section.visible {
     transition: all 0.2s ease;
 }
 
-/* Optional: Add hover effect on dots */
 .timeline-item:hover::before {
     background: var(--primary-hover);
     transform: translateX(-50%) scale(1.2);
@@ -425,7 +394,7 @@ section.visible {
 }
 
 .skill-card h3 {
-    font-size: 28px;  /* Increased size */
+    font-size: 28px; 
     line-height: 1.14286;
     font-weight: 600;
     letter-spacing: -.009em;
@@ -510,10 +479,6 @@ section.visible {
 .contact-info a:hover {
     color: var(--primary-hover);
     text-decoration: underline;
-}
-
-@keyframes fadeIn {
-    to { opacity: 1; transform: translateY(0); }
 }
 
 /* Style both theme toggles */
@@ -805,7 +770,7 @@ body, .nav, .card, .skill-card, .nav-links a {
     line-height: 1.16667;
     font-weight: 600;
     letter-spacing: -.009em;
-    color: var(--text-color);  /* Changed from primary-color to text-color */
+    color: var(--text-color);  
     margin-bottom: 2rem;
 }
 
@@ -872,11 +837,11 @@ body, .nav, .card, .skill-card, .nav-links a {
 /* Adjust responsive styles */
 @media (max-width: 768px) {
     .skills-column h3 {
-        font-size: 24px;  /* Adjusted for mobile */
+        font-size: 24px;  
     }
     
     .skills-list li {
-        font-size: 17px;  /* Adjusted for mobile */
+        font-size: 17px;  
     }
 }
 
@@ -1236,11 +1201,6 @@ body, .nav, .card, .skill-card, .nav-links a {
         gap: 2rem;
     }
 
-    .skills-content::before,
-    .skills-content::after {
-        display: none;  /* Hide dividing lines on mobile */
-    }
-
     .skills-column {
         padding: 0;
     }
@@ -1372,30 +1332,6 @@ body, .nav, .card, .skill-card, .nav-links a {
         font-size: 32px;
         margin-bottom: 2rem;
     }
-}
-
-/* Common card styles */
-.card-base {
-    background: var(--card-bg);
-    border-radius: 1rem;
-    box-shadow: 0 10px 30px var(--shadow-color);
-    transition: all 0.3s ease;
-}
-
-/* Common text styles */
-.text-primary {
-    font-size: 17px;
-    line-height: 1.47059;
-    font-weight: 400;
-    letter-spacing: -.022em;
-}
-
-/* Common headings */
-.heading-large {
-    font-size: 28px;
-    line-height: 1.14286;
-    font-weight: 600;
-    letter-spacing: -.009em;
 }
 
 /* Project media containers */
